@@ -205,7 +205,7 @@ stop_linux(){
 #
 $bbox printf "Apa yang ingin anda lakukan?\n\t[m]ulai linux\n\t[i]nstall linux\n\t[s]top linux\nSilakan pilih: "
 if [ $? != 0 ]; then
-    die "Something when wrong.."
+    die "Something went wrong.."
 fi
 read tanya
 if [ 0$tanya = "0m" ]; then
